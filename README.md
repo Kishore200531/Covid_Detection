@@ -20,42 +20,35 @@ Step by Step designing of Covid Detection Project:
       5.	Flatten Layer
       6.	Dense Layer 
 
-  Layer-by-Layer Purpose:
-  1. Convolution Layers (Conv2D):
-    * Detect features like: edges, textures, shapes, etc 
-    * Filters (32, 64, 96 …) = number of features learned
-  
-  2. Activation Function (ReLU):
-    * Formula:
-          f(x) = max(0, x) 
-    * Removes negative values 
-    * Adds non-linearity (helps model learn complex patterns)
-  
-  3. MaxPooling (MaxPooling2D):
-    * Reduces image size
-    * Keeps only important features
-    * Faster computation and Reduces overfitting
-   
-  4. Batch Normalization:
-    * Normalizes data after each layer
-    * Stabilizes learning and Speeds up training
-    * Prevents large value fluctuations 
-   
-  5. Dropout Layer:
-    * Randomly turns off some neurons
-    * Prevents overfitting
-    * Improves generalization
-      
-  7. Flatten Layer:
-    * Converts 2D feature maps → 1D vector
-      
-  8. Dense Layer (Fully Connected):
-    * Learns final patterns for classification
-    * 128 neurons → deeper understanding
-  
-  9. Output Layer (Dense(2, softmax)):
-    * 2 neurons = 2 classes 
-    * Softmax gives probabilities 
+   Layer-by-Layer Purpose:
+   1. Convolution Layers (Conv2D):
+           * Detect features like: edges, textures, shapes, etc 
+           * Filters (32, 64, 96 …) = number of features learned
+   2. Activation Function (ReLU):
+           * Formula:
+                 f(x) = max(0, x) 
+           * Removes negative values 
+           * Adds non-linearity (helps model learn complex patterns)
+   3. MaxPooling (MaxPooling2D):
+           * Reduces image size
+           * Keeps only important features
+           * Faster computation and Reduces overfitting
+   4. Batch Normalization:
+           * Normalizes data after each layer
+           * Stabilizes learning and Speeds up training
+           * Prevents large value fluctuations
+   5. Dropout Layer:
+           * Randomly turns off some neurons
+           * Prevents overfitting
+           * Improves generalization
+   7. Flatten Layer:
+           * Converts 2D feature maps → 1D vector
+   8. Dense Layer (Fully Connected):
+           * Learns final patterns for classification
+           * 128 neurons → deeper understanding
+   9. Output Layer (Dense(2, softmax)):
+           * 2 neurons = 2 classes 
+           * Softmax gives probabilities 
 
 
 5. Model Compilation:
