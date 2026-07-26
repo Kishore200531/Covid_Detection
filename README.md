@@ -6,7 +6,7 @@ Step by Step designing of Covid Detection Project:
 
 1. Data Collection: Collection of required data of X-Rays of Covid Patients containing Covid Positive & Negative (Normal).
 
-2.	Data Split: Collected dataset is been split into two datasets – Train (Covid Det) & Test Dataset (Covid Test).
+2.	Data Split: Collected dataset is been split into two datasets - Train (Covid Det) & Test Dataset (Covid Test).
 
 3.	Model Selection: The model built is of Sequential model to detect the Covid status based on the X-Ray images that has been used in our dataset and classifies it into two categories.
        1. Covid Positive
@@ -42,10 +42,10 @@ Step by Step designing of Covid Detection Project:
            * Prevents overfitting
            * Improves generalization
    7. Flatten Layer:
-           * Converts 2D feature maps → 1D vector
+           * Converts 2D feature maps -> 1D vector
    8. Dense Layer (Fully Connected):
            * Learns final patterns for classification
-           * 128 neurons → deeper understanding
+           * 128 neurons -> deeper understanding
    9. Output Layer (Dense(2, softmax)):
            * 2 neurons = 2 classes 
            * Softmax gives probabilities 
@@ -62,8 +62,8 @@ Step by Step designing of Covid Detection Project:
            * Minimize loss → better predictions
     3. Metric = 'accuracy':
            * Tells how many predictions are correct 
-           Formula:
-             Accuracy = (Correct Predictions / Total Predictions)
+           * Formula:
+                    Accuracy = (Correct Predictions / Total Predictions)
 
 6. Model Training: It trains the neural network 
   * The model learns from data by adjusting weights
@@ -86,13 +86,13 @@ Step by Step designing of Covid Detection Project:
    1. Get Predictions:
              * Model takes test images 
              * Outputs probabilities for each class
-   2. Convert Probabilities → Class Index:
+   2. Convert Probabilities -> Class Index:
            * Picks the highest probability 
            * Converts to class index (0 or 1)
    3. Get Actual Classes:
            * These are the correct labels 
            * Provided by dataset
    4. Get Class Labels (Names):
-           * Maps index → label name
-   5. Convert Index → Label:
-           * Converts numbers → readable labels 
+           * Maps index -> label name
+   5. Convert Index -> Label:
+           * Converts numbers -> readable labels 
