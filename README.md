@@ -51,10 +51,8 @@ Step by Step designing of Covid Detection Project:
            * Softmax gives probabilities 
 
 
-5. Model Compilation:
-  * It prepares the model for training 
-
-    Training Optimization Techniques:
+5. Model Compilation: It prepares the model for training 
+   * Training Optimization Techniques:
     1. Optimizer = 'adam':
            * Controls how weights are updated
            * Uses smart learning technique (combines momentum + adaptive learning)
@@ -67,35 +65,34 @@ Step by Step designing of Covid Detection Project:
            Formula:
              Accuracy = (Correct Predictions / Total Predictions)
 
-6. Model Training:
-  * It trains the neural network 
+6. Model Training: It trains the neural network 
   * The model learns from data by adjusting weights
      
-  1. Training Data (training_set):
-    * Input images + labels
-    * Model learns patterns from this data 
-  2. Epochs = 50:
-    * 1 epoch = full pass over training data
-    * Model trains 50 times on the dataset 
-  3. Steps per Epoch = 50:
-    * Number of batches processed in one epoch 
-  4. Validation Data (test_set):
-    * Used to check performance 
-    * Detect overfitting and Measures real-world performance 
-  6. Validation Steps = 20:
-    * Number of batches used for validation
+    1. Training Data (training_set):
+           * Input images + labels
+           * Model learns patterns from this data
+    2. Epochs = 50:
+           * 1 epoch = full pass over training data
+           * Model trains 50 times on the dataset
+    3. Steps per Epoch = 50:
+           * Number of batches processed in one epoch
+    4. Validation Data (test_set):
+           * Used to check performance 
+           * Detect overfitting and Measures real-world performance
+    5. Validation Steps = 20:
+           * Number of batches used for validation
 
 7. Model Evaluation (Testing) & Prediction:
-  1. Get Predictions:
-      * Model takes test images 
-      * Outputs probabilities for each class
-  2. Convert Probabilities → Class Index:
-    * Picks the highest probability 
-    * Converts to class index (0 or 1) 
-  3. Get Actual Classes:
-    * These are the correct labels 
-    * Provided by dataset 
-  4. Get Class Labels (Names):
-    * Maps index → label name 
-  5. Convert Index → Label:
-    * Converts numbers → readable labels 
+         1. Get Predictions:
+             * Model takes test images 
+             * Outputs probabilities for each class
+         2. Convert Probabilities → Class Index:
+           * Picks the highest probability 
+           * Converts to class index (0 or 1) 
+         3. Get Actual Classes:
+           * These are the correct labels 
+           * Provided by dataset 
+         4. Get Class Labels (Names):
+           * Maps index → label name 
+         5. Convert Index → Label:
+           * Converts numbers → readable labels 
