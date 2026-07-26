@@ -83,16 +83,16 @@ Step by Step designing of Covid Detection Project:
            * Number of batches used for validation
 
 7. Model Evaluation (Testing) & Prediction:
-         1. Get Predictions:
+   1. Get Predictions:
              * Model takes test images 
              * Outputs probabilities for each class
-         2. Convert Probabilities → Class Index:
+   2. Convert Probabilities → Class Index:
            * Picks the highest probability 
-           * Converts to class index (0 or 1) 
-         3. Get Actual Classes:
+           * Converts to class index (0 or 1)
+   3. Get Actual Classes:
            * These are the correct labels 
-           * Provided by dataset 
-         4. Get Class Labels (Names):
-           * Maps index → label name 
-         5. Convert Index → Label:
+           * Provided by dataset
+   4. Get Class Labels (Names):
+           * Maps index → label name
+   5. Convert Index → Label:
            * Converts numbers → readable labels 
