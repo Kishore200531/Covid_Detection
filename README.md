@@ -54,20 +54,18 @@ Step by Step designing of Covid Detection Project:
 5. Model Compilation:
   * It prepares the model for training 
 
-  Training Optimization Techniques:
-  1. Optimizer = 'adam':
-    * Controls how weights are updated
-    * Uses smart learning technique (combines momentum + adaptive learning)
-    * Faster training and Efficient convergence 
-  
-  2. Loss Function = 'categorical_crossentropy':
-    * Measures how wrong the model is
-    * Minimize loss → better predictions
-  
-  3. Metric = 'accuracy':
-    * Tells how many predictions are correct 
-    Formula:
-      Accuracy = (Correct Predictions / Total Predictions)
+    Training Optimization Techniques:
+    1. Optimizer = 'adam':
+           * Controls how weights are updated
+           * Uses smart learning technique (combines momentum + adaptive learning)
+           * Faster training and Efficient convergence
+    2. Loss Function = 'categorical_crossentropy':
+           * Measures how wrong the model is
+           * Minimize loss → better predictions
+    3. Metric = 'accuracy':
+           * Tells how many predictions are correct 
+           Formula:
+             Accuracy = (Correct Predictions / Total Predictions)
 
 6. Model Training:
   * It trains the neural network 
